@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .container { background: #fff; padding: 2em; margin: 2em auto; width: 500px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2em; }
+        th, td { border: 1px solid #ddd; padding: 0.7em; text-align: left; }
+        th { background: #007bff; color: #fff; }
+        tr:nth-child(even) { background: #f9f9f9; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Confirmation</h2>
+    <p><strong>Name:</strong> <span th:text="${entry.name}"></span></p>
+    <p><strong>Age:</strong> <span th:text="${entry.age}"></span></p>
+    <p><strong>Title:</strong> <span th:text="${entry.title}"></span></p>
+    <p><strong>Hometown:</strong> <span th:text="${entry.hometown}"></span></p>
+
+    <h3>Previous Entries</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Title</th>
+            <th>Hometown</th>
+        </tr>
+        <tr th:each="e : ${entries}">
+            <td th:text="${e.name}"></td>
+            <td th:text="${e.age}"></td>
+            <td th:text="${e.title}"></td>
+            <td th:text="${e.hometown}"></td>
+        </tr>
+    </table>
+    <button onclick="window.location.href='/'" style="margin-top: 1em; background: #28a745;">Add Another Entry</button>
+</div>
+</body>
+</html>
