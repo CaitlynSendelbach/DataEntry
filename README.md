@@ -9,6 +9,11 @@ To run locally from IntelliJ IDEA:
 7. Right-click on the main class file and select "Run 'DemoApplication.main()'".
 8. The application should now run locally, and you can view the output in the Run window at the bottom of IntelliJ IDEA.
 9. Navigate to `http://localhost:8080` in your web browser to access the running application.
+10. To stop the application, return to IntelliJ IDEA and click the red "Stop" button in the Run window.
+11. Common issues:
+   - If you encounter any issues with dependencies, try reimporting the Maven project by clicking the "Reload All Maven Projects" button in the Maven tool window.
+   - Ensure that your Java SDK is set to version 21 in the Project Structure settings.
+   - Ensure annotations processing is enabled in the Compiler settings. This can be done by going to `Settings` -> `Build, Execution, Deployment` -> `Compiler` -> `Annotation Processors` and checking the box for "Enable annotation processing".
 
 To run locally using the jar file:
 
