@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.example.dataentrydemo.models;
 
 import org.junit.jupiter.api.Test;
 
