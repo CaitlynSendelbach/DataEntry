@@ -19,6 +19,7 @@ To run locally using the jar file:
 5. Run the jar file using the command: `java -jar dataentrydemo-1.0.0.jar`.
 6. The application should now start running locally.
 7. Open your web browser and navigate to `http://localhost:8080` to access the running application.
+8. To stop the application, return to your terminal or command prompt and press `Ctrl + C`.
 
 This project is built using Java 21 and Maven 3.
 Make sure you have the appropriate versions installed to avoid compatibility issues.
